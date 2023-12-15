@@ -1,52 +1,193 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            margin: 0;
-            overflow: hidden;
-            height: 100vh;
-            background: url('https://i.gifer.com/origin/3b/3b6bf1382efbc5f05c91a791486b945b_w200.gif') no-repeat center center fixed;
-            background-size: cover;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #ff5100c2;
-            font-size: 4em;
-        }
-
-        .content {
-            position: relative;
-            z-index: 1;
-            padding: 20px;
-            color: #c4ccd2;
-        }
-    </style>
-    <title>GIF Background</title>
-</head>
-<body>
-    <div class="content">
-        <span id="text-container"></span>
-    </div>
-
-    <script>
-        const text = "Hi !! My Name Is PRIYANHU";
-        const textContainer = document.getElementById('text-container');
-        let index = 0;
-
-        function animateText() {
-            if (index < text.length) {
-                const letter = text.charAt(index);
-                textContainer.innerHTML += letter;
-                index++;
-                setTimeout(animateText, 200); // Adjust the time delay between letters (in milliseconds)
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <style>
+             
+            h1
+            {
+                font-family:sans-serif;
+                color:rgb(29, 28, 28);
+                font-size:100px;
             }
-        }
 
-        animateText();
-    </script>
-</body>
+            .div{
+                
+                border:0px outset red;
+                width: 100%;
+                height: 60%;
+                background-color: #d7d7d7;
+                background-image: linear-gradient(147deg, #0999fad7 0%, #d7d7d7 74%);
+                align-items: center;
+            }
+
+            .main{
+                position:absolute;
+                top :25%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                float: left;
+
+            }
+
+            input{
+                font-size: 25px;
+                border: 0px;
+                height:60px;
+                width: 900px;
+                border-radius:50px;
+                padding:0px 10px;
+            }
+
+            .div2
+            {
+                border:0px outset red;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: space-around;
+                align-items:center;
+                height:100vh;
+                margin:0;
+                background-color:rgb(255, 255, 255)
+
+            }
+
+            .div3
+            {
+                border:0px;
+                width: 100%;
+                height: 30%;
+                background-color: rgb(0, 0, 0);
+                font-size: 40px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                
+
+            }
+
+            body
+            {
+                background-color: rgba(218, 215, 215, 0);
+                margin:0;
+                padding:0; 
+            }
+
+            *
+            {
+                margin: 0px;
+                padding :0px;
+                font-family:sans-serif;
+            }
+
+            .btn
+            {
+                float:right;
+            }
+
+            .mxx
+            {
+                float: center;
+            }
+
+            .card
+            {
+                width: 500px;
+                height: 500px;
+                background-color: black;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                transition: transform 0.3s aese filter 0.3s ease;
+                filter: blur(5px);
+
+            }
+
+            .card:hover{
+                transform:scale(1.1);
+                
+            }
+
+            .card:hover, .selected{
+                filter: none;                
+            }
+
+            .min:hover{
+                transform:scale(1.1);
+                
+                
+            }
+
+
+        </style>
+    </head>
+
+    
+    <BODY>
+        <div class="div">
+            <h1 align="center">
+                CRE@TIONSs...
+            </h1>
+        </div>
+        <div class="main" >
+            <input  name="box" type="text" placeholder="sample of search engine">
+            <div class="btn">
+                <a href="#">
+                    <i class="fa fa-search fa-5x">
+                    </i>
+                </a>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="div2">
+            <div class="card">
+                card 1
+            </div>
+
+            <div class="card">
+                card2
+            </div>
+            <div class="card">
+                card3
+            </div>
+
+
+        
+        </div>
+        <div class="div3">
+            <div>
+                <a href="https://www.linkedin.com/in/priyanshu-verma-04a315288?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                    <img class="min" width="50px" height="50px" src="https://cdn-icons-png.flaticon.com/256/174/174857.png">
+                </a> &nbsp;&nbsp;
+                
+                <a href="https://wa.me/qr/UC7HNW5NLGRUA1">
+                <img class="min" width="50px" height="50px" src="https://www.shareicon.net/download/2015/08/26/91363_media.svg">
+                </a> &nbsp;&nbsp;
+                <a href="https://www.instagram.com/vermapriyanshuu?igshid=OGQ5ZDc2ODk2ZA==">
+                    <img class="min" width="50px" height="50px" src="https://i.pinimg.com/originals/17/76/0a/17760a6daad2edf7f4d9b837b5437246.jpg" >
+                </a>
+            </div>
+            <div STYLE="COLOR:rgb(221, 214, 214);font-size:30px;">
+                FILL THE FORM TO REACH OR FEEDBACK:<br>You will be contected soon back 
+                <br><a href="https://docs.google.com/forms/d/e/1FAIpQLSfh9tkwOjVmKieyGf0yHuviTPl5h7MSUCIx4JmU173Ab_2ikw/viewform?usp=sf_link"><i><b>click here....</b></i></a>
+            </div>
+            <div>
+                <p style="color:gray">
+                    THIS WEBSITE IS MADE FOR JUST SAMPLE PURPOSE AND IMAGES LINKED ARE TAKEN FROM DIFFERENT SOURSES.
+                    THE CREDIT IS GIVEN RESPECTIVELY.
+                    NO @ COPYRIGHT 
+                </p>
+            </div>
+        </div>
+    </BODY>
 </html>
-
