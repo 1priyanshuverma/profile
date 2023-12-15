@@ -1,0 +1,136 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1">  
+  <style>  
+    body {  
+      font-family: 'Arial', sans-serif;  
+      background-image: url(https://c4.wallpaperflare.com/wallpaper/394/964/906/shark-digital-art-people-underwater-wallpaper-preview.jpg);  
+      background-repeat: no-repeat;
+      background-size:cover;
+      margin: 0;  
+      padding: 0;  
+      display: flex;  
+      justify-content: center;  
+      align-items: center;  
+      height: 150vh;  
+      
+    }  
+    
+    .container {  
+      background-color: white;  
+      padding: 30px;  
+      border-radius: 10px;  
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+      width: 400px;  
+    }  
+    
+    h1 {  
+      text-align: center;  
+      color: #333;  
+    }  
+    
+    hr {  
+      border: 1px solid #ddd;  
+      margin: 20px 0;  
+    }  
+    
+    label {  
+      display: block;  
+      margin-bottom: 8px;  
+      color: #555;  
+    }  
+    
+    input, select {  
+      width: 100%;  
+      padding: 10px;  
+      margin-bottom: 15px;  
+      border: 1px solid #ddd;  
+      border-radius: 4px;  
+      box-sizing: border-box;  
+    }  
+    
+    textarea {  
+      width: 100%;  
+      padding: 10px;  
+      margin-bottom: 15px;  
+      border: 1px solid #ddd;  
+      border-radius: 4px;  
+      box-sizing: border-box;  
+    }  
+    
+    input[type="radio"] {  
+      margin-right: 5px;  
+    }  
+    
+    button {  
+      background-color: #4CAF50;  
+      color: white;  
+      padding: 12px 20px;  
+      border: none;  
+      border-radius: 4px;  
+      cursor: pointer;  
+      width: 100%;  
+      opacity: 0.9;  
+      transition: opacity 0.3s ease;  
+    }  
+    
+    button:hover {  
+      opacity: 1;  
+    }  
+  </style>  
+</head>  
+<body>  
+  <div class="container">  
+    <h1>Student Registration Form</h1>  
+    <hr>  
+    <form>  
+      <label for="firstname">Firstname:</label>  
+      <input type="text" id="firstname" name="firstname" placeholder="Firstname" required>  
+    
+      <label for="middlename">Middlename:</label>  
+      <input type="text" id="middlename" name="middlename" placeholder="Middlename" required>  
+    
+      <label for="lastname">Lastname:</label>  
+      <input type="text" id="lastname" name="lastname" placeholder="Lastname" required>  
+    
+      <label for="course">Course:</label>  
+      <select id="course" name="course">  
+        <option value="Course">Course</option>  
+        <option value="BCA">BCA</option>  
+        <option value="BBA">BBA</option>  
+        <option value="B.Tech">B.Tech</option>  
+        <option value="MBA">MBA</option>  
+        <option value="MCA">MCA</option>  
+        <option value="M.Tech">M.Tech</option>  
+      </select>  
+    
+      <label>Gender:</label>  
+      <input type="radio" value="Male" name="gender" checked> Male  
+      <input type="radio" value="Female" name="gender"> Female  
+      <input type="radio" value="Other" name="gender"> Other  
+    
+      <label for="phone">Phone:</label>  
+      <div>  
+        <input type="text" id="country-code" name="country-code" placeholder="Country Code" value="+91" size="2"/>  
+        <input type="text" id="phone" name="phone" placeholder="Phone no." required>  
+      </div>  
+    
+      <label for="address">Current Address:</label>  
+      <textarea id="address" name="address" placeholder="Current Address" required></textarea>  
+    
+      <label for="email">Email:</label>  
+      <input type="text" id="email" name="email" placeholder="Enter Email" required>  
+    
+      <label for="password">Password:</label>  
+      <input type="password" id="password" name="password" placeholder="Enter Password" required>  
+    
+      <label for="confirm-password">Re-type Password:</label>  
+      <input type="password" id="confirm-password" name="confirm-password" placeholder="Retype Password" required>  
+    
+      <button type="submit">Register</button>  
+    </form>  
+  </div>  
+</body>  
+</html>
